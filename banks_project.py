@@ -20,6 +20,23 @@ def extract(url, table_attribs):
     information from the website and save it to a data frame. The
     function returns the data frame for further processing. '''
 
+    html_page = requests.get(url).text
+    data = BeautifulSoup(html_page, 'html.parser')
+    df = pd.DataFrame(columns=table_attribs)
+    tables = data.find_all('tbody')
+    rows = tables[0].find_all('tr')
+    rows_to_add = []
+    for row in rows:
+         cells = row.find_all('td')
+         if len(cells) > 2 and cells[1].find('a'):
+          bank = cells[1].text.strip()
+          mc_usd_billions = cells[2].text.strip()
+          entry = {
+                 table_attribs[0]: bank,
+                 table_attribs[1]: mc_usd_billions if mc_usd_billions else None
+                 }
+          rows_to_add.append(entry)
+    df = pd.concat([df, pd.DataFrame(rows_to_add)], ignore_index=True)
     return df
 
 def transform(df, csv_path):
@@ -43,9 +60,17 @@ def run_query(query_statement, sql_connection):
     prints the output on the terminal. Function returns nothing. '''
 
 #Declaring known values
+url = 'https://web.archive.org/web/20230908091635/https://en.wikipedia.org/wiki/List_of_largest_banks'
+table_attribs = ["Bank_name", "Market_cap_USD_billions"]
+db_name = 'World_Economies.db'
+table_name = 'Banks_by_Market_cap'
+csv_path = './Banks_by_Market_cap.csv'
+
 log_progress('Preliminaries complete. Initiating ETL process')
 
 #Call extract() function
+df=extract(url, table_attribs)
+print(df)
 log_progress('Data extraction complete. Initiating Transformation process')
 
 #Call transform() function
