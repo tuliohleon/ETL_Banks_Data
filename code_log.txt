@@ -6,3 +6,44 @@
 2024-12-31 16:32:26.892227: Data loaded to Database as a table, Executing queries
 2024-12-31 16:32:26.892246: Process Complete
 2024-12-31 16:32:26.892265: Server Connection closed
+2024-12-31 17:01:32.599558: Preliminaries complete. Initiating ETL process
+2024-12-31 17:01:34.187008: Data extraction complete. Initiating Transformation process
+2024-12-31 17:01:34.210850: Data transformation complete. Initiating Loading process
+2024-12-31 17:01:34.210945: Data saved to CSV file
+2024-12-31 17:01:34.210990: 	SQL Connection initiated
+2024-12-31 17:01:34.211020: Data loaded to Database as a table, Executing queries
+2024-12-31 17:01:34.211054: Process Complete
+2024-12-31 17:01:34.211085: Server Connection closed
+2024-12-31 17:13:04.554507: Preliminaries complete. Initiating ETL process
+2024-12-31 17:13:05.957982: Data extraction complete. Initiating Transformation process
+2024-12-31 17:13:05.972316: Data transformation complete. Initiating Loading process
+2024-12-31 17:13:05.980109: Data saved to CSV file
+2024-12-31 17:13:05.980188: 	SQL Connection initiated
+2024-12-31 17:13:05.980226: Data loaded to Database as a table, Executing queries
+2024-12-31 17:13:05.980256: Process Complete
+2024-12-31 17:13:05.980285: Server Connection closed
+2024-12-31 17:17:45.803582: Preliminaries complete. Initiating ETL process
+2024-12-31 17:17:46.683239: Data extraction complete. Initiating Transformation process
+2024-12-31 17:17:46.695156: Data transformation complete. Initiating Loading process
+2024-12-31 17:17:46.696185: Data saved to CSV file
+2024-12-31 17:17:46.697761: 	SQL Connection initiated
+2024-12-31 17:17:46.708722: Data loaded to Database as a table, Executing queries
+2024-12-31 17:17:46.708766: Process Complete
+2024-12-31 17:17:46.708789: Server Connection closed
+2024-12-31 17:24:54.002464: Preliminaries complete. Initiating ETL process
+2024-12-31 17:24:55.171390: Data extraction complete. Initiating Transformation process
+2024-12-31 17:24:55.187027: Data transformation complete. Initiating Loading process
+2024-12-31 17:24:55.188616: Data saved to CSV file
+2024-12-31 17:24:55.188844: 	SQL Connection initiated
+2024-12-31 17:24:55.198240: Data loaded to Database as a table, Executing queries
+2024-12-31 17:27:35.294664: Data saved to CSV file
+2024-12-31 17:27:35.295155: 	SQL Connection initiated
+2024-12-31 17:27:35.303591: Data loaded to Database as a table, Executing queries
+2024-12-31 17:29:01.044889: Preliminaries complete. Initiating ETL process
+2024-12-31 17:29:01.821695: Data extraction complete. Initiating Transformation process
+2024-12-31 17:29:01.834459: Data transformation complete. Initiating Loading process
+2024-12-31 17:29:01.835512: Data saved to CSV file
+2024-12-31 17:29:01.835655: 	SQL Connection initiated
+2024-12-31 17:29:01.849231: Data loaded to Database as a table, Executing queries
+2024-12-31 17:29:01.866046: Process Complete
+2024-12-31 17:29:01.866120: Server Connection closed
